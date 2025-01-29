@@ -10,15 +10,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/css.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Document</title>
   </head>
   <body>
     <div class="weather_app">
         
       <header>
-        <form>
-          <input class="input-search" type="search" placeholder="Search for cities" required />
-          <input class="submit-search" type="submit" value="Submit" />
+        <form id="searchForm">
+          <input class="input-search"  id="searchInput" type="search" placeholder="Search for cities" required />
+          <input class="submit-search"  type="submit" value="Submit" />
         </form>
       </header>
 
@@ -29,11 +30,11 @@
           <div class="weather-data">
 
             <div>
-              <h1>Madrid</h1>
+              <h1 id="city">Madrid</h1>
               <p>Chance of rain: 0%</p>
 
               <div class="temperature">
-              12&deg;C
+              <span id="currTemp">12</span>&deg;C
               </div>
 
             </div>

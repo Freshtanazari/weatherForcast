@@ -24,6 +24,7 @@ body{
     width: 80%;
     border-radius: 10px;
     background-color: #202b3b;
+    color: white;
 }
 .submit-search {
     padding: 5px 15px ;
@@ -118,7 +119,7 @@ main{
     border-bottom: 1px solid gray;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between;   
 
 }
 footer{
