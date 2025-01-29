@@ -7,12 +7,124 @@ body{
     font-family: "Roboto", serif;
     background-color: #3B4552;
     color:#c3cad5 ;
+    font-size: 10px;
 }
 .weather_app{
-    margin: 40px auto;
-    padding: 30px;
+    margin: 50px auto;
+    padding: 10px;
     border-radius: 7px;
     max-width: 800px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
     background-color:#0b131e; 
+}
+
+.input-search{
+    border: none;
+    padding:5px 15px;
+    width: 80%;
+    border-radius: 10px;
+    background-color: #202b3b;
+}
+.submit-search {
+    padding: 5px 15px ;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #202b3b;
+    width:19%;
+    margin-left: 4px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.weather-details{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    /* background-color: white; */
+}
+.weather-data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+.temperature{
+    font-size: 40px;
+}
+.today-icon {
+    font-size: 90px;
+    margin-left: 60px;
+}
+
+.todays-forcast{
+    background-color: #202b3b;
+    border-radius: 10px;
+    padding: 10px;
+}
+.daytimeBox{
+    border-right: 1px solid black;
+    padding:  0 10px;
+    text-align: center;  
+    font-size: 12px; 
+}
+.icon{
+    font-size: 30px;
+}
+.daytime{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.air-conditions{
+    margin-top: 10px;
+    background-color:#202b3b;
+    border-radius: 10px;
+    padding: 10px;
+}
+.seven-day-forcast{
+    background-color: #202b3b;
+    width: 30%;
+    margin: 10px 0 0 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.detailBox{
+    width: 49%;
+    /* margin-top: 10px; */
+}
+
+.forcastday p {
+    /* display: inline; */
+    justify-content: space-between;
+}
+.seven-day-wrapper{
+    display: flex;
+    flex-direction: column;
+    /* gap: 15px; */
+    padding: 17px;
+}
+.forcastday{
+    height: 100%;
+    padding: 7px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+footer{
+    text-align: center;
+    padding-top: 5px;
+}
+a{
+    color: blueviolet;
 }

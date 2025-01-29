@@ -1,118 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/css.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css.css" />
     <title>Document</title>
-</head>
-<body>
-<div class="weather_app">
-  <header> 
-    <form>
-        <input type="search" placeholder="Search for cities" required>
-        <input type="submit" value="Submit">
-    </form>
-  </header>
-  <main>
-    <div>
-        <div>
-        <h1>Madrid</h1>
-        <p>Chance of rain: 0%</p>
-        12&deg;C
-        </div>
-        <div>
-        ⛅
-        </div>
-    </div>
-    <div>
-        TODAY'S FORCAST
-        <div>
+  </head>
+  <body>
+    <div class="weather_app">
+        
+      <header>
+        <form>
+          <input class="input-search" type="search" placeholder="Search for cities" required />
+          <input class="submit-search" type="submit" value="Submit" />
+        </form>
+      </header>
+
+      <main>
+
+        <div class="weather-details">
+
+          <div class="weather-data">
+
             <div>
-                <p>6:00 AM</p>
-                ⛅
-                25&deg;
+              <h1>Madrid</h1>
+              <p>Chance of rain: 0%</p>
+
+              <div class="temperature">
+              12&deg;C
+              </div>
+
             </div>
-            <div>
+            <div class="today-icon">⛅</div>
+          </div>
+
+          <div class="todays-forcast">
+            TODAY'S FORCAST
+            <div class="daytime">
+              <div class="daytimeBox">
                 <p>6:00 AM</p>
-                ⛅
-                25&deg;
-            </div>
-            <div>
+                <span class="icon">⛅ </span> 25&deg;
+              </div>
+              <div class="daytimeBox">
                 <p>6:00 AM</p>
-                ⛅
-                25&deg;
-            </div>
-            <div>
+                <span class="icon">⛅ </span>25&deg;
+              </div>
+              <div class="daytimeBox">
                 <p>6:00 AM</p>
-                ⛅
-                25&deg;
-            </div>
-            <div>
+                <span class="icon">⛅ </span> 25&deg;
+              </div>
+              <div class="daytimeBox">
                 <p>6:00 AM</p>
-                ⛅
-                25&deg;
-            </div>
-            <div>
+                <span class="icon">⛅ </span>25&deg;
+              </div>
+              <div class="daytimeBox">
                 <p>6:00 AM</p>
-                ⛅
-                25&deg;
+                <span class="icon">⛅ </span> 25&deg;
+              </div>
+              <div class="daytimeBox">
+                <p>6:00 AM</p>
+                <span class="icon">⛅ </span>25&deg;
+              </div>
             </div>
-        </div>
-        <div>
+          </div>
+
+          <div class="air-conditions">
             AIR CONDITIONS
-            <div>
-                <p>🌧Real Feel </p>
-                30&deg;
+            
+            <div class="details">
+            <div class="detailBox">
+              <p>🌧Real Feel</p>
+              30&deg;
             </div>
-            <div>
-                <p>🌧Real Feel </p>
-                30&deg;
+            <div class="detailBox">
+              <p>🌧Real Feel</p>
+              30&deg;
             </div>
-            <div>
-                <p>🌧Real Feel </p>
-                30&deg;
+            <div class="detailBox">
+              <p>🌧Real Feel</p>
+              30&deg;
             </div>
-            <div>
-                <p>🌧Real Feel </p>
-                30&deg;
+            <div class="detailBox">
+              <p>🌧Real Feel</p>
+              30&deg;
             </div>
+            </div>
+
+          </div>
+    
         </div>
+
+        <div class="seven-day-forcast">
+          7-DAY FORCAST
+          <div class="seven-day-wrapper">
+          <div class="forcastday">
+            <p>Today</p>
+            <p>🌜 Sunny </p> 
+            <p>36/22</p>
+          </div>
+          <div class="forcastday">
+            <p>Today</p>
+            <p>🌜 Sunny </p> 
+            <p>36/22</p>
+          </div>
+          <div class="forcastday">
+            <p>Today</p>
+            <p>🌜 Sunny </p> 
+            <p>36/22</p>
+          </div>
+          <div class="forcastday">
+            <p>Today</p>
+            <p>🌜 Sunny </p> 
+            <p>36/22</p>
+          </div>
+          <div class="forcastday">
+            <p>Today</p>
+            <p>🌜 Sunny </p> 
+            <p>36/22</p>
+          </div>
+          <div class="forcastday">
+            <p>Today</p>
+            <p>🌜 Sunny </p> 
+            <p>36/22</p>
+          </div>
+          <div class="forcastday">
+            <p>Today</p>
+            <p>🌜 Sunny </p> 
+            <p>36/22</p>
+          </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        coded by
+        <a href="https://github.com/Freshtanazari">Freshta Nazari</a> code
+        hosted on github
+        <a href="#https://github.com/Freshtanazari/weatherForcast/tree/master"
+          >Github</a
+        >
+        website hosted on
+        <a href="https://zesty-hotteok-8dc6fd.netlify.app/">Netlify</a>.
+      </footer>
     </div>
-    <div>
-        7-DAY FORCAST
-        <div>
-            <p>Today</p> 🌜 Sunny 36/22
-        </div>
-        <div>
-            <p>Today</p> 🌜 Sunny 36/22
-        </div>
-        <div>
-            <p>Today</p> 🌜 Sunny 36/22
-        </div>
-        <div>
-            <p>Today</p> 🌜 Sunny 36/22
-        </div>
-        <div>
-            <p>Today</p> 🌜 Sunny 36/22
-        </div>
-        <div>
-            <p>Today</p> 🌜 Sunny 36/22
-        </div>
-        <div>
-            <p>Today</p> 🌜 Sunny 36/22
-        </div> 
-    </div>
-  </main>
-    <footer>
-        coded by <a href="https://github.com/Freshtanazari">Freshta Nazari</a>
-        code hosted on github <a href="#https://github.com/Freshtanazari/weatherForcast/tree/master">Github</a>
-        website hosted on <a href="https://zesty-hotteok-8dc6fd.netlify.app/">Netlify</a>.
-    </footer>
-</div>
     <script src="src/Js.js"></script>
-</body>
+  </body>
 </html>
