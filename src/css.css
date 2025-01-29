@@ -1,0 +1,18 @@
+:root{
+    color: #0b131e;
+    secondcolor: #202b3b;
+    thirdcolor: #c3cad5
+ }
+body{
+    font-family: "Roboto", serif;
+    background-color: #3B4552;
+    color:#c3cad5 ;
+}
+.weather_app{
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 7px;
+    max-width: 800px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    background-color:#0b131e; 
+}
