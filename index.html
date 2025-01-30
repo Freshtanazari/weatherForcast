@@ -31,14 +31,14 @@
 
             <div>
               <h1 id="city">Madrid</h1>
-              <p>Chance of rain: 0%</p>
+              <p>Weather Condition: <span id="weatherCondition"></span></p>
 
               <div class="temperature">
               <span id="currTemp">12</span>&deg;C
               </div>
 
             </div>
-            <div class="today-icon">⛅</div>
+            <div class="today-icon" id="todayIcon">⛅</div>
           </div>
 
           <div class="todays-forcast">
@@ -76,20 +76,20 @@
             
             <div class="details">
             <div class="detailBox">
-              <p>🌧Real Feel</p>
-              30&deg;
+              <p>🌡 Real Feel</p>
+              <span id="feelLike">30</span>&deg;
             </div>
             <div class="detailBox">
-              <p>🌧Real Feel</p>
-              30&deg;
+              <p>💧 Humidity</p>
+              <span id="humidity">30</span>
             </div>
             <div class="detailBox">
-              <p>🌧Real Feel</p>
-              30&deg;
+              <p>🌫 Pressure</p>
+              <span id="pressure">30</span>
             </div>
             <div class="detailBox">
-              <p>🌧Real Feel</p>
-              30&deg;
+              <p>🌪 Wind</p>
+              <span id="wind">30</span>
             </div>
             </div>
 
@@ -136,6 +136,7 @@
             <p>36/22</p>
           </div>
           </div>
+          Today's date: <span id="currDate"></span>
         </div>
       </main>
       <footer>
