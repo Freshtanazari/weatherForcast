@@ -10,9 +10,13 @@ function updateDate(datetime){
     let hour = datetime.getHours();
     let minutes = datetime.getMinutes();
 
+    if (minutes < 10 ){
+        minutes = `0${minutes}`;
+    }
+
     Weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Satruday"]
     day = Weekdays[day];
-   return `${day} ${currentDateTime.getHours()}:${currentDateTime.getMinutes()}`;
+   return `${day} ${hour}:${minutes}`;
 
 }
 
@@ -43,9 +47,10 @@ function updateWeather(response){
     currentDateTime = new Date(response.data.time * 1000);
     let currDate = document.querySelector("#currDate");
     currDate.innerHTML = updateDate(currentDateTime);
-    console.log(currentDateTime);
+    
+    let todayIcon = document.querySelector("#todayIcon");
+    todayIcon.src = `${response.data.condition.icon_url}`;
 }
-
 
 function searchCity(event){
     event.preventDefault();
