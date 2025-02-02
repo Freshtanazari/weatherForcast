@@ -2,9 +2,9 @@
 function searchAPI(city){
     let apikey = "fboa45182d680fb13e9a481dbtf60b57";
     let url = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apikey}`;
-    console.log(url);
     axios.get(url).then(updateWeather);
 }
+
 function updateDate(datetime){
     let day = datetime.getDay();
     let hour = datetime.getHours();
@@ -12,6 +12,9 @@ function updateDate(datetime){
 
     if (minutes < 10 ){
         minutes = `0${minutes}`;
+    }
+    if(hour < 10){
+        hour = `0${hour}`;
     }
 
     Weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Satruday"]
@@ -50,6 +53,8 @@ function updateWeather(response){
     
     let todayIcon = document.querySelector("#todayIcon");
     todayIcon.src = `${response.data.condition.icon_url}`;
+
+    getForcast(response.data.city);
 }
 
 function searchCity(event){
@@ -60,4 +65,34 @@ function searchCity(event){
 let searchForm = document.querySelector("#searchForm");
 searchForm.addEventListener("submit", searchCity);
 
+function getForcast(city){
+    apikey = "fboa45182d680fb13e9a481dbtf60b57";
+    apiurl = `https://api.shecodes.io/weather/v1/forecast?query={query}&key=${apikey}`;
+    console.log(apiurl);
+    axios.get(apiurl).then(updateForcast);
+}
+
+
+
+
+
+function updateForcast(response){
+    let forcastdays = "";
+    console.log(response.data);
+
+    let days = ["tuesday", "Monday", "Saturday"];
+    
+    days.forEach(function (day) {
+        forcastdays = forcastdays +  `
+        <div class="forcastday">
+                <p>${day}</p>
+                <p>🌜 Sunny </p> 
+                <p>36/22</p>
+        </div>`
+    }) 
+ let forcast = document.querySelector("#sevenDayWrapper"); 
+ forcast.innerHTML = forcastdays;
+};
+
 searchAPI("Paris");
+
