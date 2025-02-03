@@ -8,3 +8,6 @@ plan:
 5. javascript
 6. API integration 
 7. forcast 
+
+The website is hosted on netlify use the following link:
+https://zesty-hotteok-8dc6fd.netlify.app/
