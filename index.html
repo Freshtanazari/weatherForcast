@@ -3,12 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Fuzzy+Bubbles:wght@400;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Document</title>
@@ -16,7 +13,13 @@
   <body>
     <div class="weather_app">
       <header>
-        <form id="searchForm">
+       
+      </header>
+
+      <main>
+
+        <div class="weather-details">
+          <form id="searchForm">
           <input
             class="input-search"
             id="searchInput"
@@ -26,10 +29,7 @@
           />
           <input class="submit-search" type="submit" value="Submit" />
         </form>
-      </header>
 
-      <main>
-        <div class="weather-details">
           <div class="weather-data">
             <div>
               <h1 id="city">Madrid</h1>
@@ -39,36 +39,7 @@
             </div>
             <div><img class="today-icon" id="todayIcon" /></div>
           </div>
-
-          <div class="todays-forcast">
-            TODAY'S FORCAST
-            <div class="daytime">
-              <div class="daytimeBox">
-                <p>6:00 AM</p>
-                <span class="icon">⛅ </span> 25&deg;
-              </div>
-              <div class="daytimeBox">
-                <p>6:00 AM</p>
-                <span class="icon">⛅ </span>25&deg;
-              </div>
-              <div class="daytimeBox">
-                <p>6:00 AM</p>
-                <span class="icon">⛅ </span> 25&deg;
-              </div>
-              <div class="daytimeBox">
-                <p>6:00 AM</p>
-                <span class="icon">⛅ </span>25&deg;
-              </div>
-              <div class="daytimeBox">
-                <p>6:00 AM</p>
-                <span class="icon">⛅ </span> 25&deg;
-              </div>
-              <div class="daytimeBox">
-                <p>6:00 AM</p>
-                <span class="icon">⛅ </span>25&deg;
-              </div>
-            </div>
-          </div>
+         
 
           <div class="air-conditions">
             AIR CONDITIONS
